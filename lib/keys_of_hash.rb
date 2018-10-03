@@ -3,7 +3,7 @@ require 'pry'
 class Hash
   def keys_of_hash(hash, *value)
     array = []
-    puts hash.keys
+    puts value
     
   end
 end

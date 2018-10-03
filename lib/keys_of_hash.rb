@@ -9,7 +9,6 @@ class Hash
         result_array << key
         end
       end
-    
     return result_array
-    end    
-  end
+  end    
+end

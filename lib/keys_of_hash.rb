@@ -8,6 +8,7 @@ class Hash
           result_array << val
         end
       end
+      return result_array
     end
-    return result_array
+    
   end

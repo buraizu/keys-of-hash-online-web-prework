@@ -4,7 +4,7 @@ class Hash
   def keys_of(value, *hashes)
     result_array = []
     self.each do |key, val|
-      if val == value
+      if key == value
         result_array << val
       end
     end

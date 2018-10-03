@@ -2,10 +2,10 @@
 
 
 class Hash
-  def keys_of(value, *hashes)
+  def keys_of(*hashes)
     result_array = []
       self.each do |key, val|
-        if hashes.include? (value)
+        if hashes.include? (val)
         results_array << key
         end
       end

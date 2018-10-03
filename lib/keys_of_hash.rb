@@ -1,18 +1,11 @@
-require 'pry'
-
 class Hash
-  def keys_of_hash(hash, *value)
-    array = []
-    value_array = []
-    value.each do |val|
-      array << val.values 
-    end 
-    value_array.each do |element|
-      if element ==value 
-        array << element
+  def keys_of(*arguments)
+    results = []
+    self.each do |key, value|
+      if arguments.include? (value)
+        results.push(key)
       end
-    end 
-    array
+    end
+    results
   end
-  
 end

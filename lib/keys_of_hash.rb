@@ -3,12 +3,11 @@
 class Hash
   def keys_of(value, *hashes)
     result_array = []
-      hashes.each do |key, val|
-        if val == value
-          result_array << val
-        end
+    self.each do |key, val|
+      if val == value
+        result_array << val
       end
-      return result_array
     end
-    
+    result_array
   end
+end

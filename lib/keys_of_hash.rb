@@ -6,7 +6,7 @@ class Hash
     result_array = []
       self.each do |key, val|
         if hashes.include? (val)
-        results_array << key
+        result_array << key
         end
       end
     

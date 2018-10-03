@@ -3,7 +3,10 @@ require 'pry'
 class Hash
   def keys_of_hash(hash, *value)
     array = []
-    puts value
+    value_array = []
+    value.each do |val|
+      array << val.values 
+    end 
     
   end
 end

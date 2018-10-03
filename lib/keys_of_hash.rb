@@ -5,4 +5,5 @@ class Hash
     array = []
     puts hash.keys
     binding.pry
+  end
 end

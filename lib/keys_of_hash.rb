@@ -7,6 +7,11 @@ class Hash
     value.each do |val|
       array << val.values 
     end 
-    
+    value_array.each do |element|
+      if element ==value 
+        array << element
+      end
+    end 
   end
+  return array
 end

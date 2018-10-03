@@ -12,6 +12,7 @@ class Hash
         array << element
       end
     end 
+    array
   end
-  array
+  
 end

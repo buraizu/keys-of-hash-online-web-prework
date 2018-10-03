@@ -1,5 +1,14 @@
+require 'pry'
+
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of_hash(hash, *value)
+    array = []
+    puts hash.keys
+     binding.pry
+    value.each do
+     puts value
+    
+    end
+    return array
   end
 end

@@ -1,13 +1,12 @@
 
 class Hash
-  def keys_of(value, *hashes)
-   array = []
-      if hashes.include?(value)
-        hashes.each do |key, value2|
-          array << value2
-        
+  def keys_of(info, *hashes)
+    array = []
+      self.each do |key, value|
+        if info == key
+        array << value
+        end
       end 
-    end
     return array
   end
 end
